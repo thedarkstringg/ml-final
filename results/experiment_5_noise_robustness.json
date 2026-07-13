@@ -1,0 +1,94 @@
+{
+  "breast_cancer": {
+    "eta_values": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "adaboost_accuracy": [
+      0.956140350877193,
+      0.9385964912280702,
+      0.9210526315789473,
+      0.9122807017543859
+    ],
+    "random_forest_accuracy": [
+      0.9473684210526315,
+      0.956140350877193,
+      0.9473684210526315,
+      0.9473684210526315
+    ],
+    "adaboost_degradation": 0.04385964912280704,
+    "random_forest_degradation": 0.0,
+    "more_sensitive_model": "AdaBoost"
+  },
+  "credit_card_fraud": {
+    "eta_values": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "adaboost_accuracy": [
+      0.998017839444995,
+      0.9960356788899901,
+      0.9970267591674926,
+      0.9910802775024777
+    ],
+    "random_forest_accuracy": [
+      0.998017839444995,
+      0.9970267591674926,
+      0.9950445986124876,
+      0.9851337958374629
+    ],
+    "adaboost_degradation": 0.006937561942517267,
+    "random_forest_degradation": 0.012884043607532147,
+    "more_sensitive_model": "Random Forest"
+  },
+  "mnist_3_vs_8": {
+    "eta_values": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "adaboost_accuracy": [
+      0.952,
+      0.922,
+      0.93,
+      0.916
+    ],
+    "random_forest_accuracy": [
+      0.978,
+      0.982,
+      0.981,
+      0.972
+    ],
+    "adaboost_degradation": 0.03599999999999992,
+    "random_forest_degradation": 0.006000000000000005,
+    "more_sensitive_model": "AdaBoost"
+  },
+  "covertype": {
+    "eta_values": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "adaboost_accuracy": [
+      0.7027833001988072,
+      0.6888667992047713,
+      0.6958250497017893,
+      0.6888667992047713
+    ],
+    "random_forest_accuracy": [
+      0.7564612326043738,
+      0.76441351888668,
+      0.757455268389662,
+      0.7405566600397614
+    ],
+    "adaboost_degradation": 0.013916500994035852,
+    "random_forest_degradation": 0.015904572564612418,
+    "more_sensitive_model": "Random Forest"
+  }
+}

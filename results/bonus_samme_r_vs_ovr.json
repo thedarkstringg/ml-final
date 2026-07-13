@@ -1,0 +1,20 @@
+{
+  "samme_r": {
+    "label": "SAMME.R (n_estimators=100, 100 total stumps)",
+    "accuracy": 0.674,
+    "log_loss": 2.6496271135537133,
+    "fit_time_seconds": 4.620608568191528
+  },
+  "ovr_naive": {
+    "label": "OneVsRestAdaBoost (n_estimators=100, 700 total stumps)",
+    "accuracy": 0.694,
+    "log_loss": 0.6551849272004472,
+    "fit_time_seconds": 26.963679790496826
+  },
+  "ovr_compute_matched": {
+    "label": "OneVsRestAdaBoost (n_estimators=14, ~98 total stumps, compute-matched)",
+    "accuracy": 0.678,
+    "log_loss": 0.738772654405686,
+    "fit_time_seconds": 3.9286153316497803
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "breast_cancer": {
+    "n_components_90pct_variance": 7,
+    "cumulative_variance_at_90": 0.9100953006967311,
+    "kmeans": {
+      "k_range": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "inertias": [
+        10063.09705349024,
+        8534.85155547141,
+        7884.736673100446,
+        7228.687337367974,
+        6773.414327105184,
+        6134.468592922791,
+        5709.455755566863,
+        5502.272996993355,
+        5231.122162676162
+      ],
+      "ari_by_k": [
+        0.6536246043910179,
+        0.5146132712442905,
+        0.3610311385030083,
+        0.3190655174000544,
+        0.31182100293554943,
+        0.33546615370931115,
+        0.2531191022110487,
+        0.2398716675502063,
+        0.1848829848093515
+      ],
+      "best_k_elbow": 5,
+      "best_k_ari": 2
+    },
+    "dbscan": {
+      "min_samples": 14,
+      "eps_knee": 4.292127034984153,
+      "eps_candidates": [
+        2.1460635174920766,
+        3.219095276238115,
+        4.292127034984153,
+        5.365158793730192,
+        6.43819055247623,
+        8.584254069968306
+      ],
+      "best_eps": 2.1460635174920766,
+      "best_ari": 0.3446963128204334,
+      "best_noise_fraction": 0.46221441124780316,
+      "best_n_clusters": 2
+    },
+    "discussion_note": "K-Means ARI=0.6536 and DBSCAN ARI=0.3447 against true labels indicate strong alignment between unsupervised cluster structure and the true class boundaries on breast_cancer. Cross-reference against this dataset's supervised classifier accuracy (Experiments 1 and 4): datasets where classifiers achieve high accuracy typically also show higher ARI here, since both signals reflect the same underlying class separability."
+  },
+  "credit_card_fraud": {
+    "n_components_90pct_variance": 25,
+    "cumulative_variance_at_90": 0.9174417369178861,
+    "kmeans": {
+      "k_range": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "inertias": [
+        214425.0340641145,
+        203233.95890983948,
+        197427.93963222453,
+        192211.26659644686,
+        188420.67335139582,
+        180168.78534679383,
+        175071.14692240904,
+        169181.18558108856,
+        166237.73545399372
+      ],
+      "ari_by_k": [
+        -0.0031124349563643374,
+        -3.2360861893568406e-05,
+        0.0002482749167226662,
+        0.0008592298121427171,
+        0.00033024259028710583,
+        0.0006559098222600714,
+        0.0004264522395678729,
+        0.0003570561154977884,
+        0.0001325963560634963
+      ],
+      "best_k_elbow": 3,
+      "best_k_ari": 5
+    },
+    "dbscan": {
+      "min_samples": 50,
+      "eps_knee": 7.042555349492906,
+      "eps_candidates": [
+        3.521277674746453,
+        5.281916512119679,
+        7.042555349492906,
+        8.803194186866133,
+        10.563833024239358,
+        14.085110698985812
+      ],
+      "best_eps": 10.563833024239358,
+      "best_ari": 0.08828781451840431,
+      "best_noise_fraction": 0.00375,
+      "best_n_clusters": 1
+    },
+    "discussion_note": "K-Means ARI=0.0009 and DBSCAN ARI=0.0883 against true labels indicate weak alignment between unsupervised cluster structure and the true class boundaries on credit_card_fraud. Cross-reference against this dataset's supervised classifier accuracy (Experiments 1 and 4): datasets where classifiers achieve high accuracy typically also show higher ARI here, since both signals reflect the same underlying class separability."
+  },
+  "mnist_3_vs_8": {
+    "n_components_90pct_variance": 156,
+    "cumulative_variance_at_90": 0.9001450109792158,
+    "kmeans": {
+      "k_range": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "inertias": [
+        3060281.1906628385,
+        2947704.158538879,
+        2861956.1016080817,
+        2799020.226981495,
+        2749132.3107603295,
+        2732950.0838549775,
+        2690061.305737463,
+        2660187.024113489,
+        2634360.966296144
+      ],
+      "ari_by_k": [
+        0.2929239181742822,
+        0.25555512688624915,
+        0.18335860255688455,
+        0.2539403449641852,
+        0.21467260758823767,
+        0.24924063416916392,
+        0.21137700443819288,
+        0.20620043774784622,
+        0.2116166931605064
+      ],
+      "best_k_elbow": 5,
+      "best_k_ari": 2
+    },
+    "dbscan": {
+      "min_samples": 312,
+      "eps_knee": 35.08787742946035,
+      "eps_candidates": [
+        17.543938714730174,
+        26.31590807209526,
+        35.08787742946035,
+        43.859846786825436,
+        52.63181614419052,
+        70.1757548589207
+      ],
+      "best_eps": 17.543938714730174,
+      "best_ari": 0.0018068933737476172,
+      "best_noise_fraction": 0.323,
+      "best_n_clusters": 1
+    },
+    "discussion_note": "K-Means ARI=0.2929 and DBSCAN ARI=0.0018 against true labels indicate weak alignment between unsupervised cluster structure and the true class boundaries on mnist_3_vs_8. Cross-reference against this dataset's supervised classifier accuracy (Experiments 1 and 4): datasets where classifiers achieve high accuracy typically also show higher ARI here, since both signals reflect the same underlying class separability."
+  },
+  "covertype": {
+    "n_components_90pct_variance": 39,
+    "cumulative_variance_at_90": 0.9058679791173896,
+    "kmeans": {
+      "k_range": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "inertias": [
+        359389.4274764509,
+        351391.6553778438,
+        342938.4376366512,
+        334921.5917594268,
+        325592.6802831134,
+        317651.5448720381,
+        309304.5179387281,
+        302077.7074726557,
+        293727.32549083733
+      ],
+      "ari_by_k": [
+        0.001783482614421016,
+        0.006188330277162509,
+        0.02348947970912343,
+        0.023583421632981827,
+        0.03264374814578837,
+        0.028782741636962605,
+        0.04080868283189885,
+        0.04414382055743676,
+        0.04385465353219272
+      ],
+      "best_k_elbow": 6,
+      "best_k_ari": 9
+    },
+    "dbscan": {
+      "min_samples": 78,
+      "eps_knee": 4.8910159343910555,
+      "eps_candidates": [
+        2.4455079671955278,
+        3.6682619507932914,
+        4.8910159343910555,
+        6.11376991798882,
+        7.336523901586583,
+        9.782031868782111
+      ],
+      "best_eps": 6.11376991798882,
+      "best_ari": 0.16030072605140447,
+      "best_noise_fraction": 0.06586676665416823,
+      "best_n_clusters": 8
+    },
+    "discussion_note": "K-Means ARI=0.0441 and DBSCAN ARI=0.1603 against true labels indicate weak alignment between unsupervised cluster structure and the true class boundaries on covertype. Cross-reference against this dataset's supervised classifier accuracy (Experiments 1 and 4): datasets where classifiers achieve high accuracy typically also show higher ARI here, since both signals reflect the same underlying class separability."
+  }
+}

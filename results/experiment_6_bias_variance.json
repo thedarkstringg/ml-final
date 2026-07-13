@@ -1,0 +1,17 @@
+{
+  "single_tree": {
+    "bias_squared": 0.07017543859649122,
+    "variance": 0.06263157894736843,
+    "n_bootstrap_replicates": 100
+  },
+  "adaboost": {
+    "bias_squared": 0.03508771929824561,
+    "variance": 0.025730994152046785,
+    "n_bootstrap_replicates": 100
+  },
+  "random_forest": {
+    "bias_squared": 0.05847953216374269,
+    "variance": 0.014619883040935672,
+    "n_bootstrap_replicates": 100
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "breast_cancer": {
+    "my_tree": {
+      "accuracy": 0.9122807017543859,
+      "f1_macro": 0.9074675324675325,
+      "auc_roc": 0.9156746031746031,
+      "depth": 7,
+      "n_leaves": 19
+    },
+    "stump": {
+      "accuracy": 0.9210526315789473,
+      "f1_macro": 0.9138321995464853,
+      "auc_roc": 0.9077380952380953
+    },
+    "sklearn_tree": {
+      "accuracy": 0.9122807017543859,
+      "f1_macro": 0.9074675324675325,
+      "auc_roc": 0.9156746031746031,
+      "depth": 7,
+      "n_leaves": 19
+    },
+    "accuracy_diff_vs_sklearn": 0.0,
+    "within_2_percent_tolerance": true
+  },
+  "credit_card_fraud": {
+    "my_tree": {
+      "accuracy": 0.9991046662687406,
+      "f1_macro": 0.870334154473316,
+      "auc_roc": 0.8722203639474924,
+      "depth": 26,
+      "n_leaves": 163
+    },
+    "stump": {
+      "accuracy": 0.9990519995786665,
+      "f1_macro": 0.8620074894054415,
+      "auc_roc": 0.8620074894054415
+    },
+    "sklearn_tree": {
+      "accuracy": 0.9991397773954567,
+      "f1_macro": 0.8741435499729339,
+      "auc_roc": 0.8722379497662881,
+      "depth": 26,
+      "n_leaves": 163
+    },
+    "accuracy_diff_vs_sklearn": 3.511112671605865e-05,
+    "within_2_percent_tolerance": true
+  },
+  "mnist_3_vs_8": {
+    "my_tree": {
+      "accuracy": 0.9558333333333333,
+      "f1_macro": 0.9558198031480474,
+      "auc_roc": 0.9561050398792363,
+      "depth": 24,
+      "n_leaves": 118
+    },
+    "stump": {
+      "accuracy": 0.8566666666666667,
+      "f1_macro": 0.856647154751619,
+      "auc_roc": 0.8570241110224597
+    },
+    "sklearn_tree": {
+      "accuracy": 0.9583333333333334,
+      "f1_macro": 0.9583239562234837,
+      "auc_roc": 0.9586779386785502,
+      "depth": 24,
+      "n_leaves": 118
+    },
+    "accuracy_diff_vs_sklearn": 0.0025000000000000577,
+    "within_2_percent_tolerance": true
+  },
+  "covertype": {
+    "my_tree": {
+      "accuracy": 0.7366666666666667,
+      "f1_macro": 0.6536755466617061,
+      "auc_roc": 0.7927024835099669,
+      "depth": 30,
+      "n_leaves": 1905
+    },
+    "stump": {
+      "accuracy": 0.6386666666666667,
+      "f1_macro": 0.19690494515303708,
+      "auc_roc": 0.7268692973158059
+    },
+    "sklearn_tree": {
+      "accuracy": 0.737,
+      "f1_macro": 0.6507578051926977,
+      "auc_roc": 0.7951622498925736,
+      "depth": 30,
+      "n_leaves": 1908
+    },
+    "accuracy_diff_vs_sklearn": 0.0003333333333332966,
+    "within_2_percent_tolerance": true
+  }
+}
