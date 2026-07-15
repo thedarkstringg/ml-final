@@ -134,5 +134,16 @@ pytest tests/ -v --cov=src --cov-report=term-missing
 | bonus | `experiments/bonus_tsne.py` | ismayilysfli |
 | bonus | `experiments/bonus_samme_r.py` | ehuseynli96-ops |
 
+## Deliverables Status
+
+| Deliverable | Status | Notes |
+|---|---|---|
+| Source code (`v1.0-final` tag) | Done | All 4 modules + 2 bonus extensions, 190 tests, 95% coverage |
+| `report/report.tex` + `report/report.pdf` | Done | IEEE two-column source (`report.tex`) filled with real results from `results/*.json`; `report.pdf` is a full non-LaTeX rendering of the same content (no `pdflatex`/`xelatex`/`tectonic` available in the build environment used) — compile `report.tex` with a LaTeX toolchain (e.g. Overleaf) for the camera-ready two-column PDF |
+| `presentation/presentation.pdf` | Done | 12-slide defense deck |
+| `contribution_report.pdf` / `contribution/contribution_report.tex` | Done | Per-member breakdown, signed by all three members |
+
+The final report (`report/report.tex`, `report/report.pdf`) was written and committed by **thedarkstringg** (Ziyad Muradov), pulling real numbers from every experiment's output in `results/` and figures in `figures/` — see the commit history for authorship of individual sections and modules.
+
 ## Academic Integrity
 AI-assisted coding (Claude) was used for scaffolding and debugging. All three members reviewed, understood, and can defend every line of code. Disclosed in the report's "Tools & Acknowledgements" section.
