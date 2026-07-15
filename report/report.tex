@@ -26,13 +26,13 @@
 
 \author{
   \IEEEauthorblockN{Emin Huseynli}
-  \IEEEauthorblockA{emin.huseynli25@aiacademy.az}
+  \IEEEauthorblockA{ehuseynli96@gmail.com}
   \and
   \IEEEauthorblockN{Ziyad Muradov}
-  \IEEEauthorblockA{ziyad.muradov25@aiacademy.az}
+  \IEEEauthorblockA{fgmz2014@gmail.com}
   \and
   \IEEEauthorblockN{Ismayil Yusifli}
-  \IEEEauthorblockA{ismayil.yusifli25@aiacademy.az}
+  \IEEEauthorblockA{ismayilyusifli90@gmail.com}
 }
 
 \maketitle
@@ -128,7 +128,7 @@ density, labelling low-density points as noise.
 All algorithms are implemented in Python using NumPy only, with
 \texttt{sklearn} used strictly as a sanity-check baseline (never as the
 implementation) and for the ARI metric. Code is organised under
-\texttt{src/\allowbreak\{trees,\allowbreak boosting,\allowbreak bagging,\allowbreak unsupervised,\allowbreak metrics,\allowbreak utils\}} and the
+\texttt{src/\{trees,boosting,bagging,unsupervised,metrics,utils\}} and the
 project is reproducible end-to-end via \texttt{python src/experiments/run\_all.py}.
 
 \subsection{Decision Tree}
@@ -202,7 +202,6 @@ dataset ($>20$ features).
 \label{tab:datasets}
 \centering
 \small
-\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lrrl}
 \toprule
 Dataset & Samples & Features & Task \\
@@ -212,8 +211,7 @@ Credit Card Fraud & 284{,}807 & 30 & Binary, 0.17\% fraud \\
 MNIST (3 vs.\ 8 subset) & 6{,}000 & 784 & Binary, high-dim \\
 Covertype (subset) & 15{,}000 & 54 & 7-class \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 Breast Cancer (sklearn built-in) is our clean baseline. Credit Card Fraud
@@ -266,7 +264,6 @@ datasets (max.\ absolute gap 0.25 percentage points, on MNIST).
 \label{tab:baseline}
 \centering
 \small
-\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lccc}
 \toprule
 Dataset & Ours & sklearn & Diff.\ \\
@@ -276,8 +273,7 @@ Credit Card Fraud & 0.9991 & 0.9991 & 0.0000 \\
 MNIST (3 vs.\ 8)  & 0.9558 & 0.9583 & 0.0025 \\
 Covertype         & 0.7367 & 0.7370 & 0.0003 \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 The decision-stump baseline already reaches 0.921 accuracy on Breast Cancer
@@ -346,7 +342,6 @@ in \texttt{results/experiment\_4\_head\_to\_head.json}).
 \label{tab:headtohead}
 \centering
 \small
-\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lcccc}
 \toprule
 Dataset & Tree & AdaBoost & Our RF & sklearn RF \\
@@ -356,8 +351,7 @@ Credit Card   & .992$\pm$.001 & .995$\pm$.001 & \textbf{.998$\pm$.001} & \textbf
 MNIST (3v8)   & .952$\pm$.003 & .950$\pm$.004 & .979$\pm$.003 & \textbf{.980$\pm$.002} \\
 Covertype     & .687$\pm$.010 & .623$\pm$.014 & .778$\pm$.014 & \textbf{.784$\pm$.006} \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 AdaBoost is the single best model on the clean, balanced Breast Cancer
@@ -383,7 +377,6 @@ clean test set (Table~\ref{tab:noise}, Fig.~\ref{fig:noise}).
 \label{tab:noise}
 \centering
 \small
-\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lccl}
 \toprule
 Dataset & AdaBoost $\Delta$ & RF $\Delta$ & More sensitive \\
@@ -393,8 +386,7 @@ Credit Card Fraud & 0.69 & 1.29 & Random Forest \\
 MNIST (3 vs.\ 8)  & 3.60 & 0.60 & AdaBoost \\
 Covertype         & 1.39 & 1.59 & Random Forest \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 \begin{figure}[t]
@@ -431,7 +423,6 @@ Fig.~\ref{fig:biasvariance}).
 \label{tab:biasvar}
 \centering
 \small
-\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lcc}
 \toprule
 Model & Bias$^2$ & Variance \\
@@ -440,8 +431,7 @@ Single Tree    & 0.0702 & 0.0626 \\
 AdaBoost       & 0.0351 & 0.0257 \\
 Random Forest  & 0.0585 & 0.0146 \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 \begin{figure}[t]
@@ -472,7 +462,6 @@ $\varepsilon$ (Table~\ref{tab:unsup}, Figs.~\ref{fig:scree}--\ref{fig:kdist}).
 \label{tab:unsup}
 \centering
 \small
-\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lccc}
 \toprule
 Dataset & \#PCs @90\% & K-Means ARI & DBSCAN ARI \\
@@ -482,8 +471,7 @@ Credit Card Fraud & 25  & 0.001 & 0.088 \\
 MNIST (3 vs.\ 8)  & 156 & 0.293 & 0.002 \\
 Covertype         & 39  & 0.044 & 0.160 \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 \begin{figure}[t]
@@ -543,7 +531,6 @@ and a compute-matched one-vs-rest wrapper (7 $\times$ 14 $\approx$ 98 stumps)
 \label{tab:bonus}
 \centering
 \small
-\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lcccc}
 \toprule
 Variant & Stumps & Acc.\ & Log-loss & Time (s) \\
@@ -552,8 +539,7 @@ SAMME.R           & 100 & 0.674 & 2.650 & 4.62 \\
 OvR (naive)       & 700 & \textbf{0.694} & \textbf{0.655} & 26.96 \\
 OvR (compute-matched) & 98  & 0.678 & 0.739 & 3.93 \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
 At matched compute budget ($\sim$100 total stumps), SAMME.R and the
