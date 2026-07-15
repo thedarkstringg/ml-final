@@ -6,8 +6,8 @@
 | GitHub | Name | Main Contributions |
 |---|---|---|
 | ehuseynli96-ops | Emin Huseynli | Decision Tree, AdaBoost, SAMME.R bonus, run_all.py |
-| thedarkstringg | Ziyad Muradov | Random Forest, data pipeline (preprocessing / evaluation / datasets), OneVsRestAdaBoost |
-| ismayilysfli | Ismayil Yusifli | Unsupervised (PCA / KMeans / DBSCAN), all 7 experiment scripts, t-SNE bonus, report & slides |
+| thedarkstringg | Ziyad Muradov | Random Forest, data pipeline (preprocessing / evaluation / datasets), OneVsRestAdaBoost,  report & slides |
+| ismayilysfli | Ismayil Yusifli | Unsupervised (PCA / KMeans / DBSCAN), all 7 experiment scripts, t-SNE bonus |
 
 ## Project Overview
 Implementation from scratch of three ML algorithms — Decision Tree (CART), AdaBoost (SAMME), and Random Forest — plus an unsupervised analysis pipeline (PCA, K-Means, DBSCAN). Controlled empirical study comparing boosting vs. bagging across four real-world datasets.
